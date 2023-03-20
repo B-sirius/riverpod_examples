@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_examples/modules/example1/page.dart';
 import 'package:riverpod_examples/modules/example2/page.dart';
+import 'package:riverpod_examples/modules/example3/page.dart';
+import 'package:riverpod_examples/modules/example4/page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/example1': (context) => const Example1(),
         '/example2': (context) => const Example2(),
+        '/example3': (context) => const Example3(),
+        '/example4': (context) => const Example4(),
       },
     );
   }
@@ -37,7 +41,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: ListView.builder(
-          itemCount: 2,
+          itemCount: 4,
           itemBuilder: (context, index) {
             final exampleNumber = index + 1;
             return Center(
