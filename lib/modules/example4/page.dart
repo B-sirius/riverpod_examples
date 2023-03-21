@@ -27,7 +27,7 @@ final currentWeatherProvider = FutureProvider((ref) {
 });
 
 // It shows the weather based on the selected city.
-// A Future provider is like a provider but for async.
+// A FutureProvider is like a Provider but for async.
 class Example4 extends ConsumerWidget {
   const Example4({super.key});
 

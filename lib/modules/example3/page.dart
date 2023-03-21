@@ -13,7 +13,7 @@ class CounterNotifier extends StateNotifier<int> {
 }
 
 /// It shows a counter.
-/// a state notifier provider is very helpful for it's keeping the state changes methods inside the provider.
+/// a StateNotifierProvider is very helpful for it's keeping the state changes methods inside the provider.
 class Example3 extends ConsumerWidget {
   const Example3({super.key});
 

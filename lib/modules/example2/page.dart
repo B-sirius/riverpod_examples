@@ -6,7 +6,7 @@ final countProvider = StateProvider((ref) {
 });
 
 /// It shows a counter.
-/// a state provider holds a state, and we can change the state with update .state directly.
+/// a StateProvider holds a state, and we can change the state with update .state directly.
 /// or we can use update method like .update((state) => state +1), so it can read its previous value.
 class Example2 extends ConsumerWidget {
   const Example2({super.key});
