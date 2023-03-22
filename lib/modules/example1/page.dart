@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final dateProvider = Provider((_) => DateTime.now());
 
 /// It shows the current time when the page is opened.
-/// a Provider's state is read only.
+/// A Provider's state is read only.
 class Example1 extends ConsumerWidget {
   const Example1({super.key});
 
